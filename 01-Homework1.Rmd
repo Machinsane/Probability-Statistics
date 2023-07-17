@@ -1,6 +1,6 @@
 # Homework 1
 
-```{r message=FALSE}
+```{r echo=FALSE, message=FALSE}
 library(tidyverse)
 library(knitr)
 library(pander)
@@ -8,13 +8,13 @@ library(pander)
 
 ## Problem 1 Playlists revisited
 
-```{r }
+```{r echo=FALSE}
 playlist = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/Data/plays_top50.csv',header = TRUE)
 ```
 
 ### Part A
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ daft.punk + david.bowie, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
@@ -34,7 +34,7 @@ Row:
 
 To check out if 2 events are independent, we can use the definition: If A and B are independent, then P(A\|B) = P(A\|\~B) = P(A) To make it clear, "plays Pink Floyd" is considered as event B, "plays Johnny cash" is event A.
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ johnny.cash, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %>% pander()
 ```
 
@@ -42,7 +42,7 @@ xtabs(~ johnny.cash, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %
 
 1: plays Johnny Cash
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ johnny.cash + pink.floyd, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
@@ -62,14 +62,14 @@ So, in this case P(A) = 6%, P(A\|B) = 10.5%, P(A\|not B) = 5.5%; clearly, they a
 
 Or we can check it by if P(B) = P(B\|A) = P(B\|\~A)
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ pink.floyd, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %>% pander() %>% pander()
 ```
 0: never plays Pink Floyd 
 
 1: plays Pink Floyd
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ pink.floyd + johnny.cash, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
@@ -89,13 +89,13 @@ Clearly, P(B) = 10.5%, P(B\|A) = 18.3%, and P(B\|\~A) = 10%, so they are not clo
 
 ## Problem 2 Super Bowl ads
 
-```{r }
+```{r echo=FALSE}
 superbowl = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/Data/superbowl.csv',header = TRUE)
 ```
 
 ### Part A
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ danger, data=superbowl,sparse=FALSE) %>% prop.table() %>% round(2) %>% pander()
 ```
 
@@ -105,7 +105,7 @@ False: not danger
 
 Which returns the results that P(danger = TRUE) = 30%
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ danger + funny, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
@@ -133,7 +133,7 @@ It seems that humor are indeed more or less a indication of danger for this ads,
 
 ### Part B
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ animals, data=superbowl,sparse=FALSE) %>% prop.table() %>% round(2) %>% pander()
 ```
 
@@ -141,7 +141,7 @@ True: with animals False: without animals
 
 Which returns the results that P(animals = TRUE) = 37%
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ animals + use_sex, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
@@ -167,7 +167,7 @@ From the probability tables and unconditional probability, I think animals and u
 
 ### Part C
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ celebrity, data=superbowl,sparse=FALSE) %>% prop.table() %>% round(2) %>% pander()
 ```
 
@@ -177,7 +177,7 @@ False: without celebrities
 
 Which returns the results that P(celebrity = TRUE) = 29%
 
-```{r }
+```{r echo=FALSE}
 xtabs(~ celebrity + patriotic, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
@@ -203,14 +203,14 @@ Similar with Part B, in this part, the unconditional probability of celebrity is
 
 ## Problem 3 Beauty, or not, in the classroom
 
-```{r }
+```{r echo=FALSE}
 library(ggplot2)
 profs = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/Data/profs.csv',header = TRUE)
 ```
 
 ### Part A
 
-```{r }
+```{r echo=FALSE}
 ggplot(profs,aes(x=eval)) + geom_histogram(bins=20,color="black", fill="white") + ggtitle('Evaluation Scores Distribution') + labs(x = "Evaluation Scores", y = "Count")
 ```
 
@@ -224,7 +224,7 @@ We can see around 4 is where the most scores are sited. So I guess that most UT'
 
 ### Part B
 
-```{r }
+```{r echo=FALSE}
 ggplot(profs, aes(x=native, y=eval, fill=native)) + geom_boxplot() + ggtitle('Scores by whether native speaker or not') + labs(x = "Native Speaker", y = "Evaluation Scores")
 ```
 
@@ -236,7 +236,7 @@ So, from this boxplot, we can conclude that native speakers generally get better
 
 ### Part C
 
-```{r }
+```{r echo=FALSE}
 ggplot(profs,aes(x=eval)) + geom_histogram(bins = 20,color="green", fill="grey") + ggtitle('Evaluation Scores Distribution by gender') + facet_grid(.~gender) + labs(x = "Evaluation Scores", y = "Count")
 ```
 
@@ -244,7 +244,7 @@ From this plot, we can see that male professors are more focused around 4, where
 
 ### Part D
 
-```{r }
+```{r echo=FALSE}
 ggplot(profs, aes(x=beauty, y=eval)) + geom_point() + ggtitle('Scores Distribution by Beauty') + labs(x = "Physical Attractness", y = "Evaluation Scores")
 ```
 
@@ -254,7 +254,7 @@ I think that the physical attraction basically has slightly positive relationshi
 
 ## Problem 4 SAT scores for UT students
 
-```{r }
+```{r echo=FALSE}
 utsat = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/Data/utsat.csv',header = TRUE)
 tb = data.frame(Scores = c("SAT-V", "SAT-Q", "GPA"),
                 Mean = c(mean(utsat$SAT.V), mean(utsat$SAT.Q), mean(utsat$GPA)),
@@ -277,13 +277,13 @@ Quan5 is 5th percentile and so on so forth.
 
 ## Problem 5 bike sharing
 
-```{r }
+```{r echo=FALSE}
 bikeshare = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/Data/bikeshare.csv',header = TRUE)
 ```
 
 ### Plot A
 
-```{r }
+```{r echo=FALSE}
 bikeshare %>%
   group_by(hr) %>%
   summarise(avg = mean(total)) %>%
@@ -298,7 +298,7 @@ We can see that the average ridership around morning rush hour and afternoon rus
 
 ### Plot B
 
-```{r }
+```{r echo=FALSE}
 workingday0_b = bikeshare %>% filter(workingday == 0) %>% group_by(hr) %>% summarise(avg = mean(total)) %>% add_column(workingday = 0)
 workingday1_b = bikeshare %>% filter(workingday == 1) %>% group_by(hr) %>% summarise(avg = mean(total)) %>% add_column(workingday = 1)
 tb_b = rbind(workingday0_b, workingday1_b)
@@ -311,7 +311,7 @@ X and Y axis basically are the same as the plot A.
 
 ### Plot C
 
-```{r }
+```{r echo=FALSE}
 workingday0_c = bikeshare %>% 
                 filter(hr == 9) %>% 
                 filter(workingday == 0) %>% 
