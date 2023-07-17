@@ -1,4 +1,4 @@
-Welcome! 
+Howdy! 
 
 This is a collection of 4 assignments from James Scott’s probability and Statistics courses, written by Zhifei Yu a.k.a Kevin.
 
