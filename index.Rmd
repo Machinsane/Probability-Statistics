@@ -1,0 +1,25 @@
+--- 
+title: "Homeworks for James' Stats classes"
+author: "Zhifei Yu"
+date: "2023-7-14"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: Machinsane/HWforStats
+description: "Homeworks for James' Stats classes"
+always_allow_html: true
+---
+
+# Welcome! {-}
+
+Howdy! This is a collection of 4 assignments from James Scott's probability and Statistics courses, written by Zhifei Yu a.k.a Kevin.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
