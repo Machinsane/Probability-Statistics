@@ -18,15 +18,15 @@ playlist = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignmen
 xtabs(~ daft.punk + david.bowie, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
-Column: 
+Column:
 
-0: never plays Daft Punk 
+0: never plays Daft Punk
 
-1: plays Daft Punk 
+1: plays Daft Punk
 
-Row: 
+Row:
 
-0: never plays David Bowie 
+0: never plays David Bowie
 
 1: plays David Bowie
 
@@ -38,7 +38,7 @@ To check out if 2 events are independent, we can use the definition: If A and B 
 xtabs(~ johnny.cash, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %>% pander()
 ```
 
-0: never plays Johnny Cash 
+0: never plays Johnny Cash
 
 1: plays Johnny Cash
 
@@ -46,15 +46,15 @@ xtabs(~ johnny.cash, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %
 xtabs(~ johnny.cash + pink.floyd, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
-Column: 
+Column:
 
-0: never plays Johnny Cash 
+0: never plays Johnny Cash
 
-1: plays Johnny Cash 
+1: plays Johnny Cash
 
-Row: 
+Row:
 
-0: never plays Pink Floyd 
+0: never plays Pink Floyd
 
 1: plays Pink Floyd
 
@@ -65,7 +65,8 @@ Or we can check it by if P(B) = P(B\|A) = P(B\|\~A)
 ```{r echo=FALSE}
 xtabs(~ pink.floyd, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %>% pander() %>% pander()
 ```
-0: never plays Pink Floyd 
+
+0: never plays Pink Floyd
 
 1: plays Pink Floyd
 
@@ -73,19 +74,20 @@ xtabs(~ pink.floyd, data=playlist,sparse=FALSE) %>% prop.table() %>% round(3) %>
 xtabs(~ pink.floyd + johnny.cash, data=playlist,sparse=FALSE) %>% prop.table(2) %>% round(3) %>% pander()
 ```
 
-Column: 
+Column:
 
-0: never plays Pink Floyd 
+0: never plays Pink Floyd
 
-1: plays Pink Floyd 
+1: plays Pink Floyd
 
-Row: 
+Row:
 
-0: never plays Johnny Cash 
+0: never plays Johnny Cash
 
 1: plays Johnny Cash
 
 Clearly, P(B) = 10.5%, P(B\|A) = 18.3%, and P(B\|\~A) = 10%, so they are not close to each other.
+
 
 ## Problem 2 Super Bowl ads
 
@@ -99,7 +101,7 @@ superbowl = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignme
 xtabs(~ danger, data=superbowl,sparse=FALSE) %>% prop.table() %>% round(2) %>% pander()
 ```
 
-True: should be danger 
+True: should be danger
 
 False: not danger
 
@@ -109,21 +111,21 @@ Which returns the results that P(danger = TRUE) = 30%
 xtabs(~ danger + funny, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
-Column: 
+Column:
 
-True: should be danger 
+True: should be danger
 
-False: not danger 
+False: not danger
 
-Row: 
+Row:
 
-True: should be funny 
+True: should be funny
 
 False: not funny
 
-From the table, we can know that: 
+From the table, we can know that:
 
-P(danger = TRUE \| funny = TRUE) = 39% 
+P(danger = TRUE \| funny = TRUE) = 39%
 
 P(danger = TRUE \| funny = FALSE) = 12%
 
@@ -145,21 +147,21 @@ Which returns the results that P(animals = TRUE) = 37%
 xtabs(~ animals + use_sex, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
-Column: 
+Column:
 
-True: with animals 
+True: with animals
 
-False: without animals 
+False: without animals
 
-Row: 
+Row:
 
-True: has sex contents 
+True: has sex contents
 
 False: not have sex contents
 
-From the table, we can know that: 
+From the table, we can know that:
 
-P(animals = TRUE \| use_sex = TRUE) = 38% 
+P(animals = TRUE \| use_sex = TRUE) = 38%
 
 P(animals = TRUE \| use_sex = FALSE) = 37%
 
@@ -171,7 +173,7 @@ From the probability tables and unconditional probability, I think animals and u
 xtabs(~ celebrity, data=superbowl,sparse=FALSE) %>% prop.table() %>% round(2) %>% pander()
 ```
 
-True: with celebrities 
+True: with celebrities
 
 False: without celebrities
 
@@ -181,25 +183,26 @@ Which returns the results that P(celebrity = TRUE) = 29%
 xtabs(~ celebrity + patriotic, data=superbowl,sparse=FALSE) %>% prop.table(2) %>% round(2) %>% pander()
 ```
 
-Column: 
+Column:
 
-True: with celebrities 
+True: with celebrities
 
-False: without celebrities 
+False: without celebrities
 
-Row: 
+Row:
 
-True: has patriotic contents 
+True: has patriotic contents
 
 False: not have patriotic contents
 
-From the table, we can know that: 
+From the table, we can know that:
 
-P(celebrity = TRUE \| patriotic = TRUE) = 29% 
+P(celebrity = TRUE \| patriotic = TRUE) = 29%
 
 P(celebrity = TRUE \| patriotic = FALSE) = 29%
 
 Similar with Part B, in this part, the unconditional probability of celebrity is nearly equal to the 2 conditional probabilities of both showing patriotic contents and not showing this. Thus, they are independent on the basis of this data.
+
 
 ## Problem 3 Beauty, or not, in the classroom
 
@@ -214,9 +217,9 @@ profs = read.csv('/Users/kevin/Academic/MAE/2023 Summer/R&Prob&Stat/Assignments/
 ggplot(profs,aes(x=eval)) + geom_histogram(bins=20,color="black", fill="white") + ggtitle('Evaluation Scores Distribution') + labs(x = "Evaluation Scores", y = "Count")
 ```
 
-Above is the histogram plot that shows course evaluation scores of all professors. 
+Above is the histogram plot that shows course evaluation scores of all professors.
 
-X axis shows the evaluation scores which professors have gained. 
+X axis shows the evaluation scores which professors have gained.
 
 Y axis shows tha counting of each score.
 
@@ -228,7 +231,7 @@ We can see around 4 is where the most scores are sited. So I guess that most UT'
 ggplot(profs, aes(x=native, y=eval, fill=native)) + geom_boxplot() + ggtitle('Scores by whether native speaker or not') + labs(x = "Native Speaker", y = "Evaluation Scores")
 ```
 
-The left red box represents the non-native English speaker. 
+The left red box represents the non-native English speaker.
 
 The right blue box stands for native speaker. Y axis means the evaluation scores.
 
@@ -237,7 +240,7 @@ So, from this boxplot, we can conclude that native speakers generally get better
 ### Part C
 
 ```{r echo=FALSE}
-ggplot(profs,aes(x=eval)) + geom_histogram(bins = 20,color="green", fill="grey") + ggtitle('Evaluation Scores Distribution by gender') + facet_grid(.~gender) + labs(x = "Evaluation Scores", y = "Count")
+ggplot(profs,aes(x=eval)) + geom_histogram(bins = 20,color="green", fill="grey") +  ggtitle('Evaluation Scores Distribution by gender') + facet_grid(gender ~ .) + labs(x = "Evaluation Scores", y = "Count")
 ```
 
 From this plot, we can see that male professors are more focused around 4, whereas female professors are more spread-out.
@@ -251,6 +254,7 @@ ggplot(profs, aes(x=beauty, y=eval)) + geom_point() + ggtitle('Scores Distributi
 X axis stands for the score of beauty.
 
 I think that the physical attraction basically has slightly positive relationship with evaluation scores but cannot be a predictive indicator of evaluation.
+
 
 ## Problem 4 SAT scores for UT students
 
@@ -268,9 +272,9 @@ tb = data.frame(Scores = c("SAT-V", "SAT-Q", "GPA"),
 kable(tb, digits = 2, format = "html", row.names = TRUE)
 ```
 
-SAT-V means SAT verbal scores and SAT-Q means SAT quantitative score, while GPA means accumulative grade points. 
+SAT-V means SAT verbal scores and SAT-Q means SAT quantitative score, while GPA means accumulative grade points.
 
-Mean is the average of each score, std means standard deviation, IOR is inter-quantile range. 
+Mean is the average of each score, std means standard deviation, IOR is inter-quantile range.
 
 Quan5 is 5th percentile and so on so forth.
 
@@ -289,12 +293,12 @@ bikeshare %>%
   summarise(avg = mean(total)) %>%
   ggplot(aes(x=hr, y=avg)) + geom_line()+ geom_point() + labs(x = "Hour in a day", y = "Hourly Avarage")
 ```
+
 In this plot, x axis stands for the 24 hours in a single day. 0 is midnight and 10 is 10a.m., so on so forth.
 
 Y is the average ridership of each hour throughout all days in this data.
 
 We can see that the average ridership around morning rush hour and afternoon rush hour are 2 peaks. Also, it remains fairly high during daytime but swiftly decreases in the evening.
-
 
 ### Plot B
 
@@ -304,10 +308,10 @@ workingday1_b = bikeshare %>% filter(workingday == 1) %>% group_by(hr) %>% summa
 tb_b = rbind(workingday0_b, workingday1_b)
 tb_b %>% ggplot(aes(x=hr,y=avg)) + geom_line()+ geom_point() + facet_wrap(~workingday) + labs(x = "Hour in a day", y = "Hourly Avarage")
 ```
-X and Y axis basically are the same as the plot A. 
+
+X and Y axis basically are the same as the plot A.
 
 0 means weekends and holidays, while 1 means workdays. Workdays' pattern is pretty close to plot A and it complies with common sense. But non-holidays' pattern are quite different from Plot days, people tends to use bikes around noon till afternoon. I guess that people are likely to hang out during this time.
-
 
 ### Plot C
 
@@ -329,12 +333,11 @@ workingday1_c = bikeshare %>%
 tb_c = rbind(workingday0_c, workingday1_c)
 tb_c %>% ggplot(aes(weathersit,y=avg)) + geom_bar(stat='identity', fill="forest green") + facet_wrap(~workingday) + labs(x = "Weather Situation", y = "Avereage Ridership around 9AM")
 ```
+
 0 and 1 has the same meaning as Part B.
 
 X axis means weather situation where 1 means sunny day, 2 means cloudy and misty day, and 3 means light snowy and light rainy day.
 
 Y axis represents the avarage ridership around 9a.m.
 
-So, in non-workdays, when the weather becomes cloudy, a few people may not go out riding bike because they might think that there will be potential rains. However, in workdays, almost all people will not change their original plan, which is getting a bike, just because of potential rains. They have to work! 
-
-
+So, in non-workdays, when the weather becomes cloudy, a few people may not go out riding bike because they might think that there will be potential rains. However, in workdays, almost all people will not change their original plan, which is getting a bike, just because of potential rains. They have to work!
