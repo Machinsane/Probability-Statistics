@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Homework 2 | Homeworks for James’ Stats classes</title>
+  <meta name="description" content="Chapter 2 Homework 2 | Homeworks for James’ Stats classes" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Homework 2 | Homeworks for James’ Stats classes" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 2 Homework 2 | Homeworks for James’ Stats classes" />
+  <meta name="github-repo" content="Machinsane/HWforStats" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Homework 2 | Homeworks for James’ Stats classes" />
+  
+  <meta name="twitter:description" content="Chapter 2 Homework 2 | Homeworks for James’ Stats classes" />
+  
+
+<meta name="author" content="Zhifei Yu" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="homework-1.html"/>
+<link rel="next" href="homework-3.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Homeworks for Stats</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a></li>
+<li class="chapter" data-level="1" data-path="homework-1.html"><a href="homework-1.html"><i class="fa fa-check"></i><b>1</b> Homework 1</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="homework-1.html"><a href="homework-1.html#problem-1-playlists-revisited"><i class="fa fa-check"></i><b>1.1</b> Problem 1 Playlists revisited</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="homework-1.html"><a href="homework-1.html#part-a"><i class="fa fa-check"></i><b>1.1.1</b> Part A</a></li>
+<li class="chapter" data-level="1.1.2" data-path="homework-1.html"><a href="homework-1.html#part-b"><i class="fa fa-check"></i><b>1.1.2</b> Part B</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="homework-1.html"><a href="homework-1.html#problem-2-super-bowl-ads"><i class="fa fa-check"></i><b>1.2</b> Problem 2 Super Bowl ads</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="homework-1.html"><a href="homework-1.html#part-a-1"><i class="fa fa-check"></i><b>1.2.1</b> Part A</a></li>
+<li class="chapter" data-level="1.2.2" data-path="homework-1.html"><a href="homework-1.html#part-b-1"><i class="fa fa-check"></i><b>1.2.2</b> Part B</a></li>
+<li class="chapter" data-level="1.2.3" data-path="homework-1.html"><a href="homework-1.html#part-c"><i class="fa fa-check"></i><b>1.2.3</b> Part C</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="homework-1.html"><a href="homework-1.html#problem-3-beauty-or-not-in-the-classroom"><i class="fa fa-check"></i><b>1.3</b> Problem 3 Beauty, or not, in the classroom</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="homework-1.html"><a href="homework-1.html#part-a-2"><i class="fa fa-check"></i><b>1.3.1</b> Part A</a></li>
+<li class="chapter" data-level="1.3.2" data-path="homework-1.html"><a href="homework-1.html#part-b-2"><i class="fa fa-check"></i><b>1.3.2</b> Part B</a></li>
+<li class="chapter" data-level="1.3.3" data-path="homework-1.html"><a href="homework-1.html#part-c-1"><i class="fa fa-check"></i><b>1.3.3</b> Part C</a></li>
+<li class="chapter" data-level="1.3.4" data-path="homework-1.html"><a href="homework-1.html#part-d"><i class="fa fa-check"></i><b>1.3.4</b> Part D</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="homework-1.html"><a href="homework-1.html#problem-4-sat-scores-for-ut-students"><i class="fa fa-check"></i><b>1.4</b> Problem 4 SAT scores for UT students</a></li>
+<li class="chapter" data-level="1.5" data-path="homework-1.html"><a href="homework-1.html#problem-5-bike-sharing"><i class="fa fa-check"></i><b>1.5</b> Problem 5 bike sharing</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="homework-1.html"><a href="homework-1.html#plot-a"><i class="fa fa-check"></i><b>1.5.1</b> Plot A</a></li>
+<li class="chapter" data-level="1.5.2" data-path="homework-1.html"><a href="homework-1.html#plot-b"><i class="fa fa-check"></i><b>1.5.2</b> Plot B</a></li>
+<li class="chapter" data-level="1.5.3" data-path="homework-1.html"><a href="homework-1.html#plot-c"><i class="fa fa-check"></i><b>1.5.3</b> Plot C</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="homework-2.html"><a href="homework-2.html"><i class="fa fa-check"></i><b>2</b> Homework 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="homework-2.html"><a href="homework-2.html#problem-1-capital-metro-ut-ridership"><i class="fa fa-check"></i><b>2.1</b> Problem 1 Capital Metro UT Ridership</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="homework-2.html"><a href="homework-2.html#plot-1"><i class="fa fa-check"></i><b>2.1.1</b> Plot 1</a></li>
+<li class="chapter" data-level="2.1.2" data-path="homework-2.html"><a href="homework-2.html#plot-2"><i class="fa fa-check"></i><b>2.1.2</b> Plot 2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="homework-2.html"><a href="homework-2.html#problem-2-wrangling-the-billboard-top-100"><i class="fa fa-check"></i><b>2.2</b> Problem 2 Wrangling the Billboard Top 100</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="homework-2.html"><a href="homework-2.html#part-a-3"><i class="fa fa-check"></i><b>2.2.1</b> Part A</a></li>
+<li class="chapter" data-level="2.2.2" data-path="homework-2.html"><a href="homework-2.html#part-b-3"><i class="fa fa-check"></i><b>2.2.2</b> Part B</a></li>
+<li class="chapter" data-level="2.2.3" data-path="homework-2.html"><a href="homework-2.html#part-3"><i class="fa fa-check"></i><b>2.2.3</b> Part 3</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="homework-2.html"><a href="homework-2.html#problem-3-regression-practice"><i class="fa fa-check"></i><b>2.3</b> Problem 3 Regression Practice</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="homework-2.html"><a href="homework-2.html#part-a-4"><i class="fa fa-check"></i><b>2.3.1</b> Part A</a></li>
+<li class="chapter" data-level="2.3.2" data-path="homework-2.html"><a href="homework-2.html#part-b-4"><i class="fa fa-check"></i><b>2.3.2</b> Part B</a></li>
+<li class="chapter" data-level="2.3.3" data-path="homework-2.html"><a href="homework-2.html#part-c-2"><i class="fa fa-check"></i><b>2.3.3</b> Part C</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="homework-2.html"><a href="homework-2.html#problem-4-probability-practice"><i class="fa fa-check"></i><b>2.4</b> Problem 4 Probability Practice</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="homework-2.html"><a href="homework-2.html#part-a-5"><i class="fa fa-check"></i><b>2.4.1</b> Part A</a></li>
+<li class="chapter" data-level="2.4.2" data-path="homework-2.html"><a href="homework-2.html#part-b-5"><i class="fa fa-check"></i><b>2.4.2</b> Part B</a></li>
+<li class="chapter" data-level="2.4.3" data-path="homework-2.html"><a href="homework-2.html#part-c-3"><i class="fa fa-check"></i><b>2.4.3</b> Part C</a></li>
+<li class="chapter" data-level="2.4.4" data-path="homework-2.html"><a href="homework-2.html#part-d-1"><i class="fa fa-check"></i><b>2.4.4</b> Part D</a></li>
+<li class="chapter" data-level="2.4.5" data-path="homework-2.html"><a href="homework-2.html#part-e"><i class="fa fa-check"></i><b>2.4.5</b> Part E</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="homework-2.html"><a href="homework-2.html#problem-5-modeling-soccer-games-with-th-poisson-distribution"><i class="fa fa-check"></i><b>2.5</b> Problem 5 Modeling soccer games with th Poisson distribution</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="homework-2.html"><a href="homework-2.html#question-1"><i class="fa fa-check"></i><b>2.5.1</b> Question 1</a></li>
+<li class="chapter" data-level="2.5.2" data-path="homework-2.html"><a href="homework-2.html#question-2"><i class="fa fa-check"></i><b>2.5.2</b> Question 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="homework-3.html"><a href="homework-3.html"><i class="fa fa-check"></i><b>3</b> Homework 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="homework-3.html"><a href="homework-3.html#problem-1-cdfs-and-pdfs"><i class="fa fa-check"></i><b>3.1</b> Problem 1 CDFs and PDFs</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="homework-3.html"><a href="homework-3.html#part-a-6"><i class="fa fa-check"></i><b>3.1.1</b> Part A</a></li>
+<li class="chapter" data-level="3.1.2" data-path="homework-3.html"><a href="homework-3.html#part-b-6"><i class="fa fa-check"></i><b>3.1.2</b> Part B</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="homework-3.html"><a href="homework-3.html#problem-2-practice-with-expected-value"><i class="fa fa-check"></i><b>3.2</b> Problem 2 Practice with Expected Value</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="homework-3.html"><a href="homework-3.html#part-a-7"><i class="fa fa-check"></i><b>3.2.1</b> Part A</a></li>
+<li class="chapter" data-level="3.2.2" data-path="homework-3.html"><a href="homework-3.html#part-b-7"><i class="fa fa-check"></i><b>3.2.2</b> Part B</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="homework-3.html"><a href="homework-3.html#problem-3-inverse-cdf"><i class="fa fa-check"></i><b>3.3</b> Problem 3 Inverse CDF</a></li>
+<li class="chapter" data-level="3.4" data-path="homework-3.html"><a href="homework-3.html#problem-4-simulation"><i class="fa fa-check"></i><b>3.4</b> Problem 4 Simulation</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="homework-3.html"><a href="homework-3.html#part-a-8"><i class="fa fa-check"></i><b>3.4.1</b> Part A</a></li>
+<li class="chapter" data-level="3.4.2" data-path="homework-3.html"><a href="homework-3.html#part-b-8"><i class="fa fa-check"></i><b>3.4.2</b> Part B</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="homework-3.html"><a href="homework-3.html#problem-5-more-pdfcdf-practice"><i class="fa fa-check"></i><b>3.5</b> Problem 5 More PDF/CDF Practice</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Homeworks for James’ Stats classes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="homework-2" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Homework 2<a href="homework-2.html#homework-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="problem-1-capital-metro-ut-ridership" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Problem 1 Capital Metro UT Ridership<a href="homework-2.html#problem-1-capital-metro-ut-ridership" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="plot-1" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Plot 1<a href="homework-2.html#plot-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="_main_files/figure-html/unnamed-chunk-28-1.png" width="1920" /></p>
+<p>Caption: Above is the the combination of line plots above, each plot stands for a day in week. x-axis means the hours throughout a day from 6 a.m. to 9 p.m. The y-axis means the average boarding. We have 3 lines in each plot, representing 3 months from September to November. Orange line shows September, green line shows October, and blue line shows November.</p>
+<p>Answer: From the combination of plots above, I found that the peak boarding from Monday to Friday are quite similar because these five days are workdays; students, teachers, and staffs are taking regular routines in these days. But, on weekend, the boarding curves become so flat because of no class and no work at school.</p>
+<p>My reason for that the average boarding on Monday in September is lower than the other 2 months is September has a lot of new students coming. Most new students just know new friends and maybe hanging out with new friends on Sunday night. So, on Monday, they probably could not get up early enough to catch up a bus. That is why the average boarding on Monday is quite less than the other 2 months.</p>
+<p>The average boarding on Weds/Thurs/Fri in November looks lower. I guess it is related to the Halloween Holiday. As we know, in Halloween, we have a short break and most people definitely do not come to school. Thus, undoubtedly, the average boarding should be lower.</p>
+</div>
+<div id="plot-2" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Plot 2<a href="homework-2.html#plot-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="_main_files/figure-html/unnamed-chunk-29-1.png" width="1920" /></p>
+<p>Caption: This combination of scatter plots shows the relationship between boarding number and temperature. The x-axis is temperature of each section and the y-axis is the boarding amount during each 15min section. Also each faceted plot stands for each hour from 6 a.m. to 9 p.m. e.g. the first plot has a “6” above, which means 6 a.m. and the last plot has a 21 above which means 9 p.m.</p>
+<p>Answer: Actually, I did not see any trend alongside with temperature. In each hour of days, the points distribution seems to be very chaotic and ruleless. Therefore, I dare to say temperature has no solid effect on the number of UT student boarding the bus.</p>
+</div>
+</div>
+<div id="problem-2-wrangling-the-billboard-top-100" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Problem 2 Wrangling the Billboard Top 100<a href="homework-2.html#problem-2-wrangling-the-billboard-top-100" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="part-a-3" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Part A<a href="homework-2.html#part-a-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="45%" />
+<col width="43%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">performer</th>
+<th align="center">song</th>
+<th align="center">weeks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Imagine Dragons</td>
+<td align="center">Radioactive</td>
+<td align="center">87</td>
+</tr>
+<tr class="even">
+<td align="center">AWOLNATION</td>
+<td align="center">Sail</td>
+<td align="center">79</td>
+</tr>
+<tr class="odd">
+<td align="center">Jason Mraz</td>
+<td align="center">I’m Yours</td>
+<td align="center">76</td>
+</tr>
+<tr class="even">
+<td align="center">The Weeknd</td>
+<td align="center">Blinding Lights</td>
+<td align="center">76</td>
+</tr>
+<tr class="odd">
+<td align="center">LeAnn Rimes</td>
+<td align="center">How Do I Live</td>
+<td align="center">69</td>
+</tr>
+<tr class="even">
+<td align="center">LMFAO Featuring Lauren Bennett
+&amp; GoonRock</td>
+<td align="center">Party Rock Anthem</td>
+<td align="center">68</td>
+</tr>
+<tr class="odd">
+<td align="center">OneRepublic</td>
+<td align="center">Counting Stars</td>
+<td align="center">68</td>
+</tr>
+<tr class="even">
+<td align="center">Adele</td>
+<td align="center">Rolling In The Deep</td>
+<td align="center">65</td>
+</tr>
+<tr class="odd">
+<td align="center">Jewel</td>
+<td align="center">Foolish Games/You Were Meant
+For Me</td>
+<td align="center">65</td>
+</tr>
+<tr class="even">
+<td align="center">Carrie Underwood</td>
+<td align="center">Before He Cheats</td>
+<td align="center">64</td>
+</tr>
+</tbody>
+</table>
+<p>Caption: This is the table for top 10 songs spending most weeks on the Billboard Top 100 from 1958 to 2021.</p>
+<p>The first column shows the performer name of these songs, the second column lists the name of these songs, and the third colume stands for the total number of weeks for each song.</p>
+</div>
+<div id="part-b-3" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Part B<a href="homework-2.html#part-b-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="_main_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p>Caption: This is a line graph which shows the total amount of unique songs appearing in the Billboard Top 100 in each year from 1959 to 2020. x-axis represents the year and y-axis stands for the number of the songs.</p>
+<p>Comment: I found that around the middle of 1960s, there was a peak which a lot of songs appearing in the Top List. I guess that one of potential reasons is that in these years, the hippie movement arose and gradually dominated the United States. Alongside with this movement, a lot of genres of music, like Rock&amp;Roll, R&amp;B, was becoming more and more popular. So during this time, songs were pretty diverse. Another rising trend seems to happen after 2010, maybe just because of globalization, songs from other cultures, such as K-pop, Latin, are becoming more and more public.</p>
+</div>
+<div id="part-3" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Part 3<a href="homework-2.html#part-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="_main_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p>Caption: This is a bar plot showing 19 artists with equal or over 30 songs at least 10 weeks on the Billboard. The x-axis is the the number songs of each artist and the y-axis shows the name of each artist.</p>
+<p>Sir Elton John has over 50 songs appearing more than 10 weeks in Billboard, which is a great achievement!</p>
+</div>
+</div>
+<div id="problem-3-regression-practice" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Problem 3 Regression Practice<a href="homework-2.html#problem-3-regression-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Below is the intercept and estimated coefficient of age:</p>
+<pre><code>## (Intercept)         age 
+## 147.8129158  -0.6198159</code></pre>
+<p>Below shows the scatter plot of age(x-axis) and creatinine clearance rate(y-axis) with a reference line with the estimators above:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<div id="part-a-4" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Part A<a href="homework-2.html#part-a-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Let me put <em>age = 55</em> i.e <em>x = 55</em> into the equation <em>y(creatinine) = 147.81 - 0.62x</em>. We can get:</p>
+<pre><code>## [1] 113.71</code></pre>
+<p>So, we expect that a 55-year-old person has 113.71 ml/min creatinine clearance rate.</p>
+</div>
+<div id="part-b-4" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Part B<a href="homework-2.html#part-b-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The coefficient of age told us that when we grow up 1 year, we expect to decrease 0.62 ml/min of creatinine clearance rate. i.e. -0.62 ml/min per year.</p>
+</div>
+<div id="part-c-2" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Part C<a href="homework-2.html#part-c-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Expected 40-year-old creatinine clearance rate:</p>
+<pre><code>## [1] 123.01</code></pre>
+<p>Real rate: 135 ml/min</p>
+<p>Expected 60-year-old creatinine clearance rate:</p>
+<pre><code>## [1] 110.61</code></pre>
+<p>Real rate: 112 ml/min</p>
+<p>So, we can know the difference between real creatinine clearance rate for the 40-year-old is <em>135-123.01 = 11.99</em> and the difference between real creatinine clearance rate for the 60-year-old is <em>112 - 110.61 = 1.39</em>. So from these two difference 11.99 is bigger than 1.39, we can say the 40-year old is healthier.</p>
+<p>Let us look another comparison, the comparative rate which defines as <em>difference/expected value</em>:</p>
+<p>For the 40:</p>
+<pre><code>## [1] 0.097</code></pre>
+<p>For the 60:</p>
+<pre><code>## [1] 0.013</code></pre>
+<p>So, the rate of the 40 is almost 9 times of the rate of the 60, which means the 40 is comparatively healthier than the expected value for 40.</p>
+<p>In conclusion, the 40-year-old is healthier than the 60-year-old in terms of creatinine clearance rate.</p>
+</div>
+</div>
+<div id="problem-4-probability-practice" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Problem 4 Probability Practice<a href="homework-2.html#problem-4-probability-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="part-a-5" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Part A<a href="homework-2.html#part-a-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Let event A be buying 3 cars and none of them is lemon.</p>
+<p>So, ~A should be buying 3 cars and at least one of them is lemon.</p>
+<p><em>P(~A) = 1 - P(A) =</em></p>
+<pre><code>## [1] 0.719</code></pre>
+<p>The probability of getting at least one lemon should be 72%.</p>
+</div>
+<div id="part-b-5" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Part B<a href="homework-2.html#part-b-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Since each time of throwing a dice is independent, we can treat throwing a dice twice as independent events.</p>
+<p>For the probability of getting the sum of 2 number is odd, we have 2 scenarios: First, first time is a even and second time is a odd; the other is converse. So the probability of this event should be <em>P(odd) * P(even) + P(even) * P(odd)</em>, which is</p>
+<pre><code>## [1] 0.5</code></pre>
+<p>For the probability of the sum of 2 number is less than 7, we can go through case by case. If we get 1 at first time, we can get 1,2,3,4,5 at the second time, the probability of it should be 1/6 * 5/6 = 5/36. If we get 2 at first time, we can get 1,2,3,4 at the second time, the P of it should be 1/6 * 4/6 = 4/36. If getting 3 at the first time, the P should be 1/6 * 3/6 = 3/36. If 4, then 1/6 * 2/6 = 2/36. If 5, then 1/6 * 1/6 = 1/36. If 6, no chance to get less than 7, so the P is 0. Then we add up these probabilities, we can get</p>
+<pre><code>## [1] 0.417</code></pre>
+<p>So the chance to get the sum of 2 numbers less than 7 is about 42%</p>
+<p>In this cas, we can go through case by case again. If we get 1 at first time, we can get 2,4 at the second time, 2 cases here. If we get 2 at first time, we can get 1,3 at the second time, 2 cases hear. If getting 3 at the first time, we can get 2 at second time, then 1 case. If 4, then get 1 at second time, still 1 case. If 5, then 0. Then we add up these case, we can get 6 case.</p>
+<p>The total case is 6 * 6=36, and the chance of getting odd number is 0.5, so the odd case is 0.5 * 36 = 18.</p>
+<p>Thus, the P(&lt;7|the number is odd) = 6/18 = 1/3</p>
+<p>If they are independent, then P(A|B) = P(A), but here, P(&lt;7) = 0.42 and P(&lt;7|odd) = 0.33. Therefore, they are not independent apparently.</p>
+</div>
+<div id="part-c-3" class="section level3 hasAnchor" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> Part C<a href="homework-2.html#part-c-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Information we already have:</p>
+<p>P(RC) = 0.3</p>
+<p>P(TC) = 0.7</p>
+<p>P(yes|RC) = 0.5</p>
+<p>P(no|RC) = 0.5</p>
+<p>P(yes) = 0.65</p>
+<p>P(no) = 0.35</p>
+<p>What we need to get: P(yes|TC)</p>
+<p>P(yes) = P(RC) * P(yes|RC) + P(TC) * P(yes|TC), which is 0.65 = 0.3 * 0.5 + 0.7 * x</p>
+<p>Solve the equation, we get</p>
+<pre><code>## [1] 0.714</code></pre>
+<p>Thus, there are 71% Truthful visitors saying yes in the survey.</p>
+</div>
+<div id="part-d-1" class="section level3 hasAnchor" number="2.4.4">
+<h3><span class="header-section-number">2.4.4</span> Part D<a href="homework-2.html#part-d-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Given information:</p>
+<p>P(positive|disease) = 0.993</p>
+<p>P(negative|non-disease) = 0.999</p>
+<p>P(disease) = 0.000025</p>
+<p>P(non-disease) = 1 - 0.000025 = 0.999975</p>
+<p>What we need to get: P(disease|positive) by Bayes Rule</p>
+<p>P(positive|non-disease) = 1 - P(negative|non-disease) = 0.0001</p>
+<p>P(positive) = P(positive|disease) * P(disease) + P(positive|non-disease) * P(non-disease) =</p>
+<pre><code>## [1] 0.0001248225</code></pre>
+<p>P(disease|positive) = P(positive|disease) * P(disease) / P(positive) =</p>
+<pre><code>## [1] 0.1988784</code></pre>
+<p>So, there is 19.9% chance someone have the disease when testing positive.</p>
+</div>
+<div id="part-e" class="section level3 hasAnchor" number="2.4.5">
+<h3><span class="header-section-number">2.4.5</span> Part E<a href="homework-2.html#part-e" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Given Information:</p>
+<p>P(R/A) = 0.99</p>
+<p>P(R/~A) = 0.10</p>
+<p>P(A) = 0.05</p>
+<p>P(~A) = 0.95</p>
+<p>Need to show: P(A/R)</p>
+<p>P(R) = P(A) * P(R/A) + P(~A) * P(R/~A) =</p>
+<pre><code>## [1] 0.1445</code></pre>
+<p>P(A/R) = P(R/A) * P(A) / P(R) =</p>
+<pre><code>## [1] 0.3425606</code></pre>
+<p>So, the probability of that an aircraft is present given it is registered should be around 34.26%</p>
+</div>
+</div>
+<div id="problem-5-modeling-soccer-games-with-th-poisson-distribution" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Problem 5 Modeling soccer games with th Poisson distribution<a href="homework-2.html#problem-5-modeling-soccer-games-with-th-poisson-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In order to answer the question what are the estimated probabilities of win/lose/draw results between 2 teams, we need to use the Probability Mass Function of Poisson Distribution to calculate the probabilities of all possible goals for both teams.</p>
+<p>The PMF of Poisson distribution takes the following form:</p>
+<p><span class="math display">\[
+P(X=x)=(λ^x/x!)e^−λ
+\]</span></p>
+<p>λ means the expected goals for each team and event X means how many goals scored in a game.</p>
+<p>Approach: First, I need to make an assumption that the goals scored by each team is an independent event. So, when a probability of a game score(like 2-1) should be the probability of first team scoring 2 goals times the probability of second team scoring 1 goal.</p>
+<p>Find the λ (expected goal by a team) by the formula:</p>
+<p><strong>The team’s attach power * The rival’s defense weakness * Home/away boost</strong>, in which:</p>
+<p>Attach power = The total goals for a team in a season/the average goals of all teams in a season</p>
+<p>Defense weakness = The total goals lost by a team in a season/the average goals lost of all teams in a season</p>
+<p>Home boost = the average goals for all home teams in a match</p>
+<p>Away boost = the average goals for all away teams in a match</p>
+<p>After we get λ, we need to use PMF of Poisson to calculate a probabilty of an outcome. For example:</p>
+<p>Set team A’s λ is 1.5 and team B’s λ is 1.7, then the goal for A is Xa and the goal for B is Xb.</p>
+<p>Since Xa and Xb are independent, we have</p>
+<p><span class="math display">\[
+P(Xa=2,Xb=1) = (1.5^2/2!)e^−1.5 * (1.7^1/1!)e^−1.7
+\]</span></p>
+<p>With just a little bit more work, we can use calculate the probability of all possible outcomes up to a rip-roaring (but very unlikely) 7-7 draw by ‘tibble’, ‘expand’, ‘mutate’ functions in R.</p>
+<p>Then, we have a table for all probabilities of games from 0-0 to 7-7 (64 outcomes). Then by ‘filter’ function, we can calculate the probability of each scenario(win/lose/draw).</p>
+<p><strong>Next, Let me calculate the home/away boost, and seasonal average goals for further use</strong></p>
+<p>The average number of goals scored i.e. conceded by teams is (all the goals/20 teams):</p>
+<pre><code>## [1] 53.6</code></pre>
+<p>The home boost is</p>
+<pre><code>## [1] 1.57</code></pre>
+<p>The away boost is</p>
+<pre><code>## [1] 1.25</code></pre>
+<div id="question-1" class="section level3 hasAnchor" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Question 1<a href="homework-2.html#question-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Liverpool(home) vs Tottenhan(away)</p>
+<p>The Attack Strength for Liverpool(home) sould be:</p>
+<pre><code>## [1] 1.66</code></pre>
+<p>The Defense Weakness for Liverpool(home) should be:</p>
+<pre><code>## [1] 0.41</code></pre>
+<p>The Attack Strength for Tottenhan(away) should be:</p>
+<pre><code>## [1] 1.25</code></pre>
+<p>The Defense Weakness for Tottenhan(away) should be:</p>
+<pre><code>## [1] 0.73</code></pre>
+<p>The λ for Liverpool(home) should be:</p>
+<pre><code>## [1] 1.89</code></pre>
+<p>The λ for Tottenhan(away) should be:</p>
+<pre><code>## [1] 0.64</code></pre>
+<p>Now, we have the λs for both Liverpool and Tottenhan.</p>
+<p>Now, show head 5 rows in a probabilities table for all possible game scores up to 6-6:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Liverpool
+</th>
+<th style="text-align:right;">
+Tottenhan
+</th>
+<th style="text-align:right;">
+prob
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.079
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.051
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0.016
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0.001
+</td>
+</tr>
+</tbody>
+</table>
+<p>Then visualize it by heatmap:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
+<p>Then calculate the probabilities of 3 scenarios:</p>
+<p>Liverpool win:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1       0.672</code></pre>
+<p>Tottenhan win:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1       0.118</code></pre>
+<p>Draw:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1       0.209</code></pre>
+<p>In conclusion, the chance of Liverpool winning is around 67.2%, the chance of Tottenhan winning is 11.8%, and the chance of draw is 20.9%</p>
+</div>
+<div id="question-2" class="section level3 hasAnchor" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Question 2<a href="homework-2.html#question-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Manchester City(home) vs Arsenal(away)</p>
+<p>The Attack Strength for Manchester City(home) sould be:</p>
+<pre><code>## [1] 1.77</code></pre>
+<p>The Defense Weakness for Manchester City(home) should be:</p>
+<pre><code>## [1] 0.43</code></pre>
+<p>The Attack Strength for Arsenal(away) should be:</p>
+<pre><code>## [1] 1.36</code></pre>
+<p>The Defense Weakness for Arsenal(away) should be:</p>
+<pre><code>## [1] 0.95</code></pre>
+<p>The λ for Manchester City(home) should be:</p>
+<pre><code>## [1] 2.65</code></pre>
+<p>The λ for Arsenal(away) should be:</p>
+<pre><code>## [1] 0.73</code></pre>
+<p>Now, we have the λs for both Liverpool and Tottenhan.</p>
+<p>Now, show head 5 rows in a probabilities table for all possible game scores up to 7-7:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+ManchesterCity
+</th>
+<th style="text-align:right;">
+Arsenal
+</th>
+<th style="text-align:right;">
+prob
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.034
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0.025
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0.009
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0.002
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+5
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0.000
+</td>
+</tr>
+</tbody>
+</table>
+<p>Then visualize it by heatmap:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
+<p>Then calculate the probabilities of 3 scenarios:</p>
+<p>ManchesterCity win:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1       0.775</code></pre>
+<p>Arsenal win:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1      0.0793</code></pre>
+<p>Draw:</p>
+<pre><code>## # A tibble: 1 × 1
+##   `sum(prob)`
+##         &lt;dbl&gt;
+## 1       0.140</code></pre>
+<p>In conclusion, the chance of ManchesterCity winning is around 77.5%, the chance of Arsenal winning is 7.9%, and the chance of draw is 14%</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="homework-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="homework-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-Homework2.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

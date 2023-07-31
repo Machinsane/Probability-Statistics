@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Homeworks for James’ Stats classes</title>
-  <meta name="description" content="Page not found | Homeworks for James’ Stats classes" />
+  <title>Chapter 3 Homework 3 | Homeworks for James’ Stats classes</title>
+  <meta name="description" content="Chapter 3 Homework 3 | Homeworks for James’ Stats classes" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Homeworks for James’ Stats classes" />
+  <meta property="og:title" content="Chapter 3 Homework 3 | Homeworks for James’ Stats classes" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Page not found | Homeworks for James’ Stats classes" />
+  <meta property="og:description" content="Chapter 3 Homework 3 | Homeworks for James’ Stats classes" />
   <meta name="github-repo" content="Machinsane/HWforStats" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Homeworks for James’ Stats classes" />
+  <meta name="twitter:title" content="Chapter 3 Homework 3 | Homeworks for James’ Stats classes" />
   
-  <meta name="twitter:description" content="Page not found | Homeworks for James’ Stats classes" />
+  <meta name="twitter:description" content="Chapter 3 Homework 3 | Homeworks for James’ Stats classes" />
   
 
 <meta name="author" content="Zhifei Yu" />
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="homework-2.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -177,18 +177,196 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="homework-3" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Homework 3<a href="homework-3.html#homework-3" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="problem-1-cdfs-and-pdfs" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Problem 1 CDFs and PDFs<a href="homework-3.html#problem-1-cdfs-and-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="part-a-6" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Part A<a href="homework-3.html#part-a-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="_main_files/figure-html/unnamed-chunk-77-1.png" width="672" /></p>
+<p>The CDF’s plot shows above. X is the event, and Y-axis shows the cumulative probability.</p>
+<p>We can conclude that:</p>
+<p><span class="math display">\[
+P(2&lt; X ≤ 4.5) = P(X = 3) = 0.1
+\]</span></p>
+<p><span class="math display">\[
+P(2 ≤ X &lt; 4.5) = P(X = {2,3}) = 0.1 + 0.1 = 0.2.
+\]</span></p>
+</div>
+<div id="part-b-6" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Part B<a href="homework-3.html#part-b-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="i" class="section level4 hasAnchor" number="3.1.2.1">
+<h4><span class="header-section-number">3.1.2.1</span> (i)<a href="homework-3.html#i" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><span class="math display">\[
+P(X^2 ≤ 0.25) = P (X ≤ \sqrt{0.25}) = P(X≤ 0.5)
+\]</span></p>
+<p>Since it follows a uniform distribution, then by the formula</p>
+<p><span class="math display">\[
+P(X≤ 0.5) = \frac{0.5-0}{1-0} = 0.5
+\]</span></p>
+</div>
+<div id="ii" class="section level4 hasAnchor" number="3.1.2.2">
+<h4><span class="header-section-number">3.1.2.2</span> (ii)<a href="homework-3.html#ii" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We have to make clear that 0 &lt; a &lt; 1, otherwise it will fail to get a probability.</p>
+<p><span class="math display">\[
+P(X^2 ≤ a) = P (X ≤ \sqrt{a}) = \frac{\sqrt{a}-0}{1-0} = \sqrt{a}
+\]</span></p>
+</div>
+<div id="iii" class="section level4 hasAnchor" number="3.1.2.3">
+<h4><span class="header-section-number">3.1.2.3</span> (iii)<a href="homework-3.html#iii" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>From part (ii), we know that</p>
+<p><span class="math display">\[
+P(Y≤ y) = P(X^2 ≤ y) = P (X ≤ \sqrt{y}) = \frac{\sqrt{y}-0}{1-0} = \sqrt{y}
+\]</span></p>
+<p>So the CDF of Y is:</p>
+<p><span class="math display">\[
+F(y) = \sqrt{y}
+\]</span></p>
+<p>And then take first-order derivatives to PDF:</p>
+<p><span class="math display">\[
+f_y(y) = \frac{d(\sqrt{y})}{dy} = \frac{1}{2(\sqrt{y})}
+\]</span></p>
+</div>
+<div id="iiii" class="section level4 hasAnchor" number="3.1.2.4">
+<h4><span class="header-section-number">3.1.2.4</span> (iiii)<a href="homework-3.html#iiii" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Compute E(Y):</p>
+<p><span class="math display">\[
+E(Y) = \int_{0}^{1} yf(y)dy = \int_{0}^{1} \frac{y}{2(\sqrt{y})}dy =\int_{0}^{1}  \frac{\sqrt{y}}{2}dy = \frac{1}{3}*(1)^\frac{3}{2} - 0 = \frac{1}{3}
+\]</span></p>
+<p>In order to compute var(Y), we need to calculate E(Y^2) first.</p>
+<p>Compute E(Y^2):</p>
+<p><span class="math display">\[
+E(Y^2) = \int_{0}^{1} y^2f(y)dy = \int_{0}^{1} \frac{y^2}{2(\sqrt{y})}dy =\int_{0}^{1}  \frac{\sqrt{y^3}}{2}dy = \frac{1}{5}*(1)^\frac{5}{2} - 0 = \frac{1}{5}
+\]</span></p>
+<p>Thus, the var(Y) = E(Y^2) - E(Y)^2 as follow:</p>
+<p><span class="math display">\[
+var(Y) = E(Y^2)- E(Y)^2 = \frac{1}{5} - (\frac{1}{3})^2 = \frac{4}{45}
+\]</span></p>
+</div>
+</div>
+</div>
+<div id="problem-2-practice-with-expected-value" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Problem 2 Practice with Expected Value<a href="homework-3.html#problem-2-practice-with-expected-value" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="part-a-7" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Part A<a href="homework-3.html#part-a-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We are trying to get E(X):</p>
+<p><span class="math display">\[
+E(X) = E(Z_1^2+Z_2^2...+Z_d^2) = E(Z_1^2)+E(Z_2^2)+...+E(Z_d^2)
+\]</span> Since Z_1 to Z_d are all follows the same distribution, we have:</p>
+<p><span class="math display">\[
+E(Z_1^2) = E(Z_2^2) = ... = E(Z_d^2)
+\]</span></p>
+<p>Thus, as long as we get E(Z_i^2), we are done. So the E(Z_i^2):</p>
+<p><span class="math display">\[
+E(Z_i^2) = Var(Z_i) + E(Z_i)^2 = 1 + 0^2 = 1
+\]</span></p>
+<p>The we can get E(X):</p>
+<p><span class="math display">\[
+E(X) =E(Z_1^2)+E(Z_2^2)+...+E(Z_d^2) = \sum_{i = 1}^{d} 1 = d
+\]</span></p>
+</div>
+<div id="part-b-7" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Part B<a href="homework-3.html#part-b-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>I do not agree with that, because average velocity does not take into account the time spent at different velocities during the entire journey.</p>
+<p>Therefore, if we want to figure out the average time, we should calculate the time for walking and biking separately, and then take weighted average of them.</p>
+<p>Thus, the time for walking should be:</p>
+<p><span class="math display">\[
+T(walking) = Distance/Velocity(walking) =2(miles)/5(miles/hour) = 0.4 hour
+\]</span></p>
+<p>And the time for biking should be:</p>
+<p><span class="math display">\[
+T(biking) = Distance/Velocity(biking) =2(miles)/10(miles/hour) = 0.2 hour
+\]</span></p>
+<p>And the add in the probabilities of two situations, we have:</p>
+<p><span class="math display">\[
+T = w(walking)*T(walking) + w(biking)*T(biking) \\= 0.4*0.4 + 0.6*0.2 = 0.16 +0.12 = 0.28 hour = 16.8 minutes
+\]</span></p>
+<p>Thus, Markov takes average 0.28 hour, or 16.8 minutes, to get to the class.</p>
+</div>
+</div>
+<div id="problem-3-inverse-cdf" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Problem 3 Inverse CDF<a href="homework-3.html#problem-3-inverse-cdf" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We can calculate the P(X&lt;x) first:</p>
+<p><span class="math display">\[
+P(X≤x) = P(F^{-1}(U)≤x) = P(F(F^{-1}(U))≤F(x)) = P(U≤F(x)) = F(x)
+\]</span>
+Then once we get the CDF, we can get the PDF of it.</p>
+<p><span class="math display">\[
+f(x) = F&#39;(x)
+\]</span></p>
+<p>Let’s look at the detailed case here (0≤u≤1):</p>
+<p><span class="math display">\[
+F(u) = P(U≤u) = \frac {u-0}{1-0} = u
+\]</span></p>
+<p>The plot as followed:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-78-1.png" width="672" /></p>
+<p>Since X = F^-1(U), we can see from the picture X and U are identical and all a uniform distribution on [0,1]. Thus, we can conclude that the pdf of f(x) equals to of f(u) as followed (0≤x≤1):</p>
+<p><span class="math display">\[
+f(x) = \frac {1}{1-0} = 1
+\]</span></p>
+<p>The plot shows as followed:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-79-1.png" width="672" /></p>
+</div>
+<div id="problem-4-simulation" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Problem 4 Simulation<a href="homework-3.html#problem-4-simulation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="part-a-8" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Part A<a href="homework-3.html#part-a-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The expected value for pn shows below:</p>
+<p><span class="math display">\[
+E(\hat{p_N}) = E(\frac{X_N}{N}) = \frac{E(X_N)}{N} = \frac{NP}{N} = P
+\]</span></p>
+<p>The standard deviation for pn shows below:</p>
+<p><span class="math display">\[
+sd(\hat{p_N}) = \sqrt {(var(\hat{p_N}))} = \sqrt {var(\frac{X_N}{N})}_ = \sqrt {\frac{var(X_N)}{N^2}} = \sqrt \frac{NP(1-P)}{N^2} = \sqrt{\frac {P-P^2}{N}}
+\]</span></p>
+</div>
+<div id="part-b-8" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Part B<a href="homework-3.html#part-b-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If we put N=5, P=0.5 in formula E(P_N) and sd(P_N), we can get：</p>
+<p>Probability for N=5:</p>
+<pre><code>## [1] 0.5</code></pre>
+<p>Standard deviation for N=5:</p>
+<pre><code>## [1] 0.2236</code></pre>
+<p>Then we use randomly simulate 1000 times, we can get Monte Carlo Mean:</p>
+<pre><code>## [1] 0.4962</code></pre>
+<p>Monte Carlo Standard Deviation:</p>
+<pre><code>## [1] 0.2249</code></pre>
+<p>From the results above, we can find Monte Carlo Mean is very close to theoretical mean, and of cause, Monte Carlo standard deviation basically agrees with the theoretical standard deviation.</p>
+<p>Repeat the same process for p10, p25, p50, p100, and make the plot as required below:</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
+<p>Caption: X-axis stands for the observation times in an experiment, noted as N; Y-axis represents the value of standard deviation. Besides, orange points mean the real value from experiments, and blue points are the theoretical value calculated be the formula in Part (A).</p>
+<p>Comments: From the plot above, we can see that, as the observations(N) of experiment increase more and more, the standard deviation become less and less, which matches the standard deviation formula in part (A).</p>
+<p>In addition to that, I can find that, as the observations(N) of each experiment increase, the real standard deviations are more close to the theoretical standard deviations.It complies large number theorem.</p>
+</div>
+</div>
+<div id="problem-5-more-pdfcdf-practice" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Problem 5 More PDF/CDF Practice<a href="homework-3.html#problem-5-more-pdfcdf-practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The CDF of X_i(i=1,2,…,N) as given:</p>
+<p><span class="math display">\[
+F_{X_i}(x) = P(X_i≤x) = \int_{0}^{x} \lambda e^{-\lambda t}dt = 1- e^{-\lambda x}
+\]</span></p>
+<p>Since max{X_i(i=1,2,…,N)}) &lt; y is equivalent to X_i &lt; y for any i, then we have:</p>
+<p><span class="math display">\[
+F_{Y_N}(y) = P(Y_N &lt; y) \\= P(max(X_1,X_2...X_N)&lt;y) \\= P(X_1&lt;y,X_2&lt;y,X_3&lt;y...X_N&lt;y)
+\]</span></p>
+<p>And then because X itself is independent, then we have:</p>
+<p><span class="math display">\[
+P(X_1&lt;y,X_2&lt;y,X_3&lt;y...X_N&lt;y) \\= P(X_1&lt;y) *P(X_2&lt;y) *...*P(X_N&lt;y) \\= F_{X_1}(y)*F_{X_2}(y)*...*F_{X_N}(y) \\= (1- e^{-\lambda y})^N
+\]</span>
+Then, differentiate the CDF of Y_N, we can get the PDF of Y_N:</p>
+<p><span class="math display">\[
+f_{Y_N} = \frac {dF_{Y_N}(y)}{dy} = \frac {d}{dy}(1-e^{\lambda y})^N = N(1-e^{\lambda y})^{N-1}*(-e^{-\lambda y})*-\lambda = N\lambda e^{-\lambda y}(1-e^{-\lambda y})^{N-1}
+\]</span></p>
+
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="homework-2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -220,7 +398,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-Homework3.Rmd",
 "text": "Edit"
 },
 "history": {
