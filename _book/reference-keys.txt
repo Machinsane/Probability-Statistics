@@ -53,3 +53,17 @@ problem-4-simulation
 part-a-8
 part-b-8
 problem-5-more-pdfcdf-practice
+homework-4
+problem-1-nbc-pilot-survey
+part-a-9
+part-b-9
+part-c-4
+problem-2-ebay
+problem-3-iron-bank
+problem-4-milk-demend-revisited
+problem-5-standard-error-calculations
+part-a-10
+i-1
+ii-1
+iii-1
+part-b-10
