@@ -194,6 +194,7 @@ $$
 Var(X) = p(1-p)
 $$
 
+Thus, we have
 
 $$
 Var(\hat{p}) = Var(\overline{X_N}) = Var(\frac{X_1+X_2+...+X_N}{N})\\=\frac{1}{N^2}\sum_{i=1}^{N}Var(X_i) = \frac{1}{N^2}*Np(1-p)=\frac{p(1-p)}{N}
@@ -207,22 +208,22 @@ $$
 
 #### iii
 
-Following the same logic, we have
+Following the same logic in (ii), we have
 
 $$
 Var(\hat{q}) =\frac{q(1-q)}{M}
 $$
 
-Thus, we have
+Because all variables are independent, Cov(p_hat,q_hat)=0). Thus, we have
 
 $$
-Var(\hat{\triangle})= Var((\hat{p}-\hat{q})=Var(\hat{p})-Var(\hat{q}) = \frac{p(1-p)}{N}-\frac{q(1-q)}{M}
+Var(\hat{\triangle})= Var((\hat{p}-\hat{q})=Var(\hat{p})+Var(\hat{q}) = \frac{p(1-p)}{N}+\frac{q(1-q)}{M}
 $$
 
 Therefore, we have
 
 $$
-Std(\hat{\triangle}) = \sqrt{\frac{p(1-p)}{N}-\frac{q(1-q)}{M}}
+Std(\hat{\triangle}) = \sqrt{\frac{p(1-p)}{N}+\frac{q(1-q)}{M}}
 $$
 
 ### Part B
@@ -230,16 +231,47 @@ $$
 The expected value of this estimator should be
 
 $$
-E(\hat{\triangle}) = E(\overline{X_N}-\overline{Y_M})=E(\overline{X_N})-E(\overline{Y_M})=\mu_X-\mu_Y
+E(\hat{\triangle}) = E(\overline{X_N}-\overline{Y_M})=E(\overline{X_N})-E(\overline{Y_M})\\
+=E(\frac{\sum_{i=1}^{N} X_i}{N})-E(\frac{\sum_{i=1}^{M} Y_i}{M})=\mu_X-\mu_Y
 $$
 
-The standard error of this estimator should be
+Even if it is not given that all the variables in the same group are independent, we assume that they are independent. Because it is like repeated experiments, each observation has nothing to do with other observations.
+
+Thus, covariance(X_i,X_j)=0. Hence, we have
 
 $$
-Std(\hat{\triangle}) = \sqrt{Var(\hat{\triangle})}=\sqrt{Var(\overline{X_N}-\overline{Y_M})}=\sqrt{Var(\overline{X_N})-Var(\overline{Y_M})}\\=\sqrt{\frac{1}{N^2}\sum_{i=1}^{N}Var(X_i)+\frac{1}{M^2}\sum_{i=1}^{M}Var(Y_i)}=\sqrt{\frac{N}{N^2}{\sigma_X}^2+\frac{M}{M^2}{\sigma_Y}^2}=\sqrt{\frac{{\sigma_X}^2}{N}-\frac{{\sigma_Y}^2}{M}}
+Var(\overline{X_N}) = Var(\frac{X_1+X_2+...+X_N}{N})=\frac{1}{N^2}Var(X_1+X_2+...+X_N)
+\\= \frac{1}{N^2}\sum_{i=1}^{N}Var(X_i) = \frac{{\sigma_X}^2}{N}
 $$
 
+Likewise, covariance(Y_i,Y_j)=0. Hence, we have
 
+$$
+Var(\overline{Y_M}) = Var(\frac{Y_1+Y_2+...+X_M}{M})=\frac{1}{M^2}Var(Y_1+Y_2+...+Y_M)
+\\= \frac{1}{M^2}\sum_{i=1}^{M}Var(Y_i) = \frac{{\sigma_Y}^2}{M}
+$$
+
+We cannot assume that Y_M and X_N are independent variable because they are not in the same group, so we have to assume that covariance(Y_M,X_N) exists as 
+$$
+Cov(\overline{X_N},\overline{Y_M})=\sigma_{XY}
+$$
+Thus,the standard error of this estimator should be
+
+$$
+Std(\hat{\triangle}) = \sqrt{Var(\hat{\triangle})}=\sqrt{Var(\overline{X_N}-\overline{Y_M})}\\=\sqrt{Var(\overline{X_N})+Var(\overline{Y_M})-2Cov(\overline{X_N},\overline{Y_M})} =\sqrt{\frac{{\sigma_X}^2}{N}+\frac{{\sigma_Y}^2}{M}-2\sigma_{XY}}
+$$
+
+If group X and group Y are independent, then we have
+
+$$
+\sigma_{XY} = 0
+$$
+
+Then, the standard error of this estimator should be
+
+$$
+Std(\hat{\triangle}) = \sqrt{Var(\hat{\triangle})}=\sqrt{Var(\overline{X_N}-\overline{Y_M})}=\sqrt{Var(\overline{X_N})+Var(\overline{Y_M})} =\sqrt{\frac{{\sigma_X}^2}{N}+\frac{{\sigma_Y}^2}{M}}
+$$
 
 
 
