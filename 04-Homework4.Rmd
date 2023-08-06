@@ -154,6 +154,8 @@ ggplot(boot_milk,aes(x=log.price.)) + geom_histogram(bins=20,color="black", fill
 
 Caption: This figure shows 10000 times bootstrap of linear regression of demand on the price. X-axis represents the price elasticity of demand and the y-axis stands for count for the values of the price elasticity of demand. In this graph, 'lower Bound' means the lower bound of 95% confidence interval and 'Upper Bound' means the upper bound of 95% confidence interval. Thus, the whole 95% confidence interval is from 'lower Bound' to 'Upper Bound'.
 
+Conclusion: From the plot above, we can simply conclude that the idealistic price elasticity of demand should be between "Lower Bound" and "Upper Bound". i.e. As price goes up 1%, the demand would go down between |'lower Bound'%| and |'Upper Bound'%|.
+
 ## Problem 5 Standard-error Calculations
 
 ### Part A
