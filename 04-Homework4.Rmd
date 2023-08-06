@@ -116,11 +116,11 @@ Next, let us look at the P-value:
 
 ```{r echo=FALSE}
 real_proportion = 70/trades
-p_value = sum(results$proportion >= real_proportion)/ 1000000
+p_value = sum(results$proportion >= real_proportion)/ 100000
 show(p_value)
 ```
 
-As we see, the P value is around 0.02%, which means given that the null hypothesis is true, the chance of observing the number of flagged trades to be equal to or larger than 70 should be around 0.02%. It is very close to 0, so the null hypothesis fails to hold so that we claim that Iron Bank violated the "Inside Trading" laws.
+As we see, the P value is around 0.2%, which means given that the null hypothesis is true, the chance of observing the number of flagged trades to be equal to or larger than 70 should be around 0.2%. It is very close to 0, so the null hypothesis fails to hold so that we claim that Iron Bank violated the "Inside Trading" laws.
 
 One_sentence conclusion: If the P value is larger than 2.5%, then the null hypothesis will look plausible to me. 
 
